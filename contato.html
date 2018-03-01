@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang='pt-BR'>
+
+	<head>
+		<meta charset = "UTF-8"/>
+		<title>Majuca Turismo</title>
+		<link rel="stylesheet" type="text/css" href="estilos/contato_css.css"/>
+
+		<script type="text/javascript">
+
+			function validar(){
+
+				var verificaData = /^[0-9]{2}\/[0-9]{2}\/[0-9]{4}$/;
+
+				if(document.cad.tNome.value == "" && document.cad.tEmail.value == "" && document.cad.dData.value == "" && document.cad.mensagem.value == ""){
+					alert("Os campos de texto não podem estar vazios!");
+					document.cad.tNome.focus();
+					return false;
+				}
+				else if(document.cad.tNome.value == ""){
+					alert("O campo de nome não pode ser vazio!");
+					document.cad.tNome.focus();
+					return false;
+				}
+				else if(document.cad.tEmail.value == ""){
+					alert("O campo de email não pode ser vazio!");
+					document.cad.tEmail.focus();
+					return false;
+				}
+				else if(document.cad.dData.value == ""){
+					alert("O campo para data de nascimento não pode ser vazio!");
+					document.cad.dData.focus();
+					return false;
+				}
+				else if(document.cad.mensagem.value == ""){
+					alert("O campo de mensagem não pode ser vazio!");
+					document.cad.mensagem.focus();
+					return false;
+
+				} else if(!verificaData.test(document.cad.dData.value)){
+    				alert("Digite a data no formato Dia/Mês/Ano");
+					document.cad.dData.focus();
+				    return false;
+
+				} else {
+					alert("Dados enviados com sucesso! Em no máximo 48 horas você receberá uma resposta.");
+					return true;
+				}
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<div id="interface">
+			<header id = "cabecalho">
+				<h1>Majuca Turismo</h1>
+				<nav id="menuIndex">
+					<ul>
+						<li><a href="index.html">Home</a> |</li>
+						<li><a href="pacotes.html">Pacotes</a> |</li>
+						<li><a href="pontos.html">Pontos Turisticos</a> |</li>
+						<li><a href="galeria.html">Galeria</a> |</li>
+						<li><a href="sobre.html">Quem Somos</a> |</li>
+						<li><a href="contato.html">Contato</a> |</li>
+						<li><a href="login.html">Entrar</a></li>
+
+					</ul>
+				</nav>
+			</header>
+
+			<header id="apresentacao">
+				<h3 style="color: rgba(0,0,0,0.7);">Dúvidas e sugestões ?</h3>
+				<h3 style="color: rgba(0,0,0,0.7);">Mande uma mensagem para nós.</h3>
+			</header>
+
+			<form name="cad" onsubmit="return validar()">
+				<fieldset id="fd1"><legend>Formulário de Contato</legend>
+					<p><label for="nome" class="legenda">Nome: </label><br><input id="nome" type="text" name="tNome" size="79" placeholder="Informe o seu nome completo" class="campo"></p>
+					<p><label for="email" class="legenda">E-mail: </label><br><input type="email" name="tEmail" id="email" size="79" placeholder="Informe o seu email" class="campo"></p>
+					<fieldset id="fd2"><legend>Sexo:</legend>
+						<input type="radio" name="sexo" id="masculino" class="opcao" checked>
+						<label for="masculino" class="sexo">Masculino</label><br>
+						<input type="radio" name="sexo" id="feminino" class="opcao">
+						<label for="feminino" class="sexo">Feminino</label>
+					</fieldset>
+					<p><label for="data" class="legenda">Data de Nascimento: </label><br><input type="text" name="dData" id="data" placeholder="dd/mm/aaaa" class="campo"></p>
+					<p><label for="msg" class="legenda">Mensagem: </label><br><textarea class="d" name="mensagem" id="msg" cols="80" rows="10" placeholder="Escreva aqui sua mensagem"></textarea></p><br>
+					<input type="submit" value="Enviar mensagem" style="position:absolute; right:700px;" class="botao"/>
+					<input type="reset" value="Limpar dados" style="position:relative; right:-390px;" class="botao"/>
+				</fieldset>
+
+			</form>
+			<footer id="rodape">
+				<p>Rua Cícero Eduardo, S/N - Bairro Junco - Picos/PI    <span id="fone">Fone: (89) 9 9927-5764</span></p>
+				<p>@Copyright 2016 - by Majuca S.A</p>
+				<ul>
+					<li><a href="https://pt-br.facebook.com/" target="_blank" class="redes">Facebook </a>|</li>
+					<li><a href="https://twitter.com/?lang=pt-br" target="_blank" class="redes">Twitter </a></li>
+				</ul>
+
+			</footer>
+		</div>
+	</body>
+
+</html>

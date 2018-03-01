@@ -1,0 +1,460 @@
+@font-face {
+
+	font-family: topsecret;
+	src: url("fontes/TopSecret.ttf");
+}
+
+body {
+
+	background-color: rgba(0,0,0,0.2);
+	background-size: 100%;
+}
+
+/* Area do Cabeçalho de Azul*/
+
+header#cabecalho {
+
+	background-color: rgb(0,139,139);
+	margin: -25px -15px 10px -15px;
+	padding: 15px;
+} 
+
+header#cabecalho h1{
+
+	font-family: topsecret;
+	font-size: 40px;
+	color: white;
+	text-align: left;
+}
+
+div#interface {
+
+	width: 1150px;
+	background-color: white;
+	margin: -25px auto 0px auto;
+	padding: 15px;
+	box-shadow: 0px 0px 10px black;
+}
+
+/* Area das figuras de Apresentação */
+
+.imgSlide {
+
+	width: 1400px;
+	height: 300px;
+}
+
+#imgSlide1 {
+	width: 1200px;
+	height: 300px;
+}
+
+.slider{
+	overflow: hidden;
+	height:  350px;
+}
+
+
+.slider figure div{
+	width: 20%;;
+	float: left;
+}
+
+.slider figure img{
+	width: 100%;;
+	float: left;
+}
+
+.slider figure{
+	right: -20px;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	position:  relative;
+	animation: 20s animacao infinite;
+}
+
+@keyframes animacao{
+			
+			0%{
+				left: 0%;
+			}
+
+
+			20%{
+				left: 0%;
+			}
+
+			32%{
+				left: -100%;
+
+			}
+
+			32%{
+				left: -100%;
+			}
+			42%{
+				left: -100%;
+			}
+			52%{
+				left: -200%
+			}
+
+			66%{
+				left: -200%;
+			}
+
+			76%{
+				left: -200%;
+			}
+
+			86%{
+				left: -100%;
+			}
+
+			92%{
+				left: -100%;
+			}
+
+			100%{
+				left: 0%;
+			}
+
+			
+} 
+
+.slide p {
+
+	z-index: 10000;
+	position: absolute;
+	color: white;
+	padding: 15px;
+	background-color: rgba(0,0,0,0.4);
+	font-size: 20px;
+}
+
+a:hover, slide{
+	color: #FFD700;
+}
+
+.slide figcaption {
+	position: absolute;
+	top: 220px;
+	right: 10px;
+	color: white;
+	background-color: rgba(0,0,0,0.3);
+
+}
+
+/* Area do Menu */
+
+nav#menuIndex {
+	display: block;
+}
+
+nav#menuIndex ul{
+	list-style: none;
+	text-transform: uppercase;
+	text-align: right;
+}
+
+nav#menuIndex li {
+
+	display: inline-block;
+	background-color: transparent;
+	color: white;
+	padding: 6px;
+	margin: -4.5px;
+	font-size: 17px;
+	font-family: 'Arial sans-serif';
+}
+
+nav#menuIndex a {
+
+	color: white;
+	text-decoration: none;
+}
+
+nav#menuIndex a:hover {
+
+	color: white;
+	background-color: rgba(0,0,0,0.4);
+	padding: 10px;
+	transition-duration:0.3s;
+}
+
+/* Area dos Pacotes principais*/
+header.apresentacao {
+
+	font-family: 'DejaVu Sans Condensed';
+	font-style: italic;
+	box-shadow: 0.5px 0.5px 0.5px rgba(0,0,0,0.1);
+	padding: 10px;
+	margin-bottom: 35px;
+}
+
+figure#pacote1 {
+
+	width: 28%;
+	border: 1px solid gray;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+	
+}
+
+div#pacotes {
+
+	position: relative;
+	margin-bottom: 70px;
+}
+figure#pacote2 {
+
+	position: absolute;
+	width: 28%;
+	border: 1px solid gray;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+	/*top: 628px;
+	left: 440px;*/
+	top: -15px;
+	left: 376px;
+
+}
+
+figure#pacote3 {
+
+	position: absolute;
+	width: 28%;
+	border: 1px solid gray;
+	box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+	/*top: 627px;
+	left: 825px;*/
+	top: -15px;
+	left: 750px;
+
+}
+
+.imgPacote1 {
+
+	border: 1px solid gray;
+	text-align: center;
+	width: 320px;
+	height: 190px;
+}
+
+.legPacote1 {
+
+	background-color: rgba(0,0,0,0.05);
+	padding: 10px;
+}
+
+h5.legendaPacote1 {
+
+	margin-top: 10px;
+	margin-left: 15px;
+	color: gray;
+	font-family: Arial;
+}
+
+h3.legendaPacote2 {
+
+	color: rgba(0,0,0,0.8);
+	margin-top: -10px;
+	margin-left: 15px;
+	font-size: 17px;
+}
+
+h6.legendaPacote3 {
+
+	margin-left: 180px;
+	margin-top: 0px;
+	color: rgba(0,0,0,0.6);
+}
+
+h4.legendaPacote4 {
+
+	margin-left: 150px;
+	margin-top: -15px;
+}
+
+a.link {
+
+	color: rgba(0,0,0,0.8);
+	text-decoration: none;
+}
+
+a.link:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+/*Area dos Pontos Turisticos*/
+
+div#pontos {
+
+	position: relative;
+	margin-bottom: 70px;
+}
+
+div#conteudo{
+	display: table;
+}
+
+div#imagem{
+	display: table-cell;
+	float: left;
+}
+
+div#texto{
+	display: table-cell;
+	float: left;
+	width: 250px;
+	margin-top: -1px;
+	margin-left: -17px;
+}
+
+figure.imagemPonto {
+
+	position: relative;
+	border: 1px solid gray;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+	left: -20px;
+	height: 190px;
+}
+
+figure.imagemPonto figcaption {
+
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,0.2);
+	color: white;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+figure.imagemPonto:hover figcaption {
+
+	opacity: 1;
+}
+
+h5.textoFonte{
+	text-align: center;
+}
+
+p.textoPonto1 {
+
+	font-size: 15px;
+	font-family: 'DejaVu Sans Condensed';
+	text-align: justify;
+}
+
+
+#conteudo2 {
+
+	position: absolute;
+	display: table;
+	top: 210px;
+	left: 50px;
+}
+
+.imagem{
+	display: table-cell;
+	float: right;
+	margin-top: -209px;
+	margin-left: 540px;
+
+}
+
+.texto{
+	
+	position: absolute;
+	width: 250px;
+	margin-top: -210px;
+	margin-left: 810px;	
+}
+
+a.linkPonto {
+
+	color: rgba(90,100,170,1);
+	text-decoration: none;
+}
+
+a.linkPonto:hover {
+
+	color: rgba(40,40,170,1);
+	text-decoration: underline;
+}
+
+
+/* Dicas de Viagem */
+
+div.viagem {
+
+	position: relative;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	margin-bottom: 45px;
+}
+
+p.dica {
+
+	position: absolute;
+	top: 0px;
+	left: 320px;
+	width: 700px;
+	text-align: justify;
+	font-family: 'DejaVu Sans Condensed';
+}
+
+img.imgViagem {
+
+	width: 300px;
+	height: 200px;
+}
+		
+/* Rodape*/
+
+footer#rodape {
+
+	background-color: rgb(0,139,139);
+	color: white;
+	font-weight: bold;
+	width: 100.9%;
+	padding: 10px;
+	margin-left: -15px;
+	margin-bottom: -15px;
+
+}
+
+footer#rodape ul {
+
+	list-style: none;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+footer#rodape li {
+	display: inline-block;
+	font-size: 15px;
+}
+
+footer#rodape p {
+	text-align: center;
+	margin-bottom: -5px;
+}
+
+span#fone {
+
+	position: relative;
+	left: 20px;
+}
+
+a.redes {
+
+	color: white;
+	text-decoration: none;
+}
+
+a.redes:hover {
+
+	text-decoration: underline;
+}

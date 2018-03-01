@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Cadastro</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style></style>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+     <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapsed" data-target="#navbar">
+
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Majuca Turismo</a>
+          </div>
+
+          <div id="navbar" class="navbar-collapse collapsed">
+            <ul class="nav navbar-nav navbar-right">
+
+              <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">Pacotes</a></li>
+              <li><a href="#">Pontos Turisticos</a></li>
+              <li><a href="#">Galeria</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Contato</a></li>
+              <li><a href="login.html"><img src="Imagens/login4.png"> Entre</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="row">
+          <div role="main">
+            <div class="info">
+              <h1 class="page-header"> Cadastre os Seus Dados</h1>
+
+              <form id="formCadCliente" data-toggle="validator" role="form">
+
+                <div class="row">
+                  <div class="form-group col-md-8">
+                    <label for="id_nome" class="control-label">Nome:</label>
+                    <input type="text" name="nome" placeholder="Informe o seu nome completo" id="id_nome" class="form-control"/>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label for="id_cpf" class="control-label">CPF:</label>
+                    <input type="number" name="CPF" id="id_cpf" class="form-control">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-8">
+                    <label for="id_email" class="control-label">Email:</label>
+                    <input type="email" name="email" id="id_email" class="form-control"/>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label for="id_fone" class="control-label">Telefone:</label>
+                    <input type="number" name="fone" id="id_fone" class="form-control" placeholder="DDD+Número"/>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-4">
+                    <label for="id_cep" class="control-label">Informe o CEP:</label>
+                    <input type="number" name="cep" id="id_cep" class="form-control"/>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="id_bairro" class="control-label">Bairro:</label>
+                    <input type="text" name="bairro" id="id_bairro" class="form-control"/>
+                  </div>
+
+                  <div class="form-group col-md-2">
+                    <label for="id_numero" class="control-label">Número:</label>
+                    <input type="number" name="numero" id="id_numero" class="form-control"/>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="id_rua" class="control-label">Rua/Avenida:</label>
+                    <input type="text" name="rua" id="id_rua" class="form-control"/>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="id_complemento" class="control-label">Complemento:</label>
+                    <input type="text" name="complemento" id="id_complemento" class="form-control"/>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="id_cidade" class="control-label">Cidade:</label>
+                    <input type="text" name="cidade" id="id_cidade" class="form-control"/>
+                  </div>
+
+                  <div class="form-group col-md-2">
+                    <label for="id_estado" class="control-label">Estado:</label>
+                    <input type="text" name="estado" id="id_estado" class="form-control"/>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label for="id_nascimento" class="control-label">Data de Nascimento:</label>
+                    <input type="date" name="nascimento" id="id_nascimento" class="form-control"/>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="id_senha" class="control-label">Senha:</label>
+                    <input type="password" name="senha" id="id_senha" class="form-control"/>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="id_conf_senha" class="control-label">Confirme a Senha:</label>
+                    <input type="password" name="confirmaSenha" id="id_conf_senha" class="form-control"/>
+                  </div>
+                </div>
+
+                <div class="row" id="actions">
+                  <button type="submit" class="btn btn-primary">Cadastrar</button>
+                  <a href="index.html" class="btn btn-default">Cancelar</a>
+                </div>
+
+              </form>
+            </div>
+          </div>
+        </div>
+
+      <footer class="row">
+
+      </footer>
+    </div>
+
+
+  	<script src="js/jquery.min.js"></script>
+  	<script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
